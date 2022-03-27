@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replaced</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/about.css">
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg" />
+
+
+</head>
+
+<body>
+  <nav>
+    <h1>Replaced?</h1>
+
+    <ul class="navigation">
+      <li><a href="index.html" class="nav-link">home</a></li>
+      <li><a href="generator.html" class="nav-link">generator</a></li>
+      <li><a href="about.html" class="nav-link active-link">about</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Have you ever wondered what is your place as a human being in our age?</h1>
+    <p>As the world is shifting from analog to digital technology at a faster pace, we find ourselves being easily
+      replaceable by <span class="name-walter" onmouseover="onWalterHover()"
+        onmouseout="onWalterOut()">automation</span> or machines. Although digital and automatic process includes
+      endless benefits and possibilities, the thought of being somehow equal to the machine is terrifying. “Replaced” is
+      a project that aims to show how we as humans are essential. The project questions what is exactly the role of the
+      human being in the creative process and why is it so difficult and almost impossible to relinquish us of it.
+      However, replaced generator might surprise you with its capabilities. By teaching the program’s algorithm replaced
+      generator can mimic the human behavior when drawing while listening to music. This process is called graphic
+      notation to be more professional. To create graphic scores all you need to do is draw the notes and sounds you
+      hear as you feel them.
+    </p>
+    <div class="modal walter-modal">
+      <img src="img/automation.png" />
+      <h2>Automation</h2>
+      <p class="test">Automation describes a wide range of technologies that reduce human intervention in processes.
+        Human intervention is reduced by predetermining decision criteria, subprocess relationships, and related actions
+        — and embodying those predeterminations in machines.</p>
+    </div>
+  </main>
+
+  <main class="section-edition">
+    <h1>Current Edition</h1>
+    <div class="edition-img-container">
+      <img src="img/score.jpg" />
+    </div>
+  </main>
+
+  <section>
+    <h1>Want to know more?</h1>
+    <h1 class="editor-content">Editor's Pick</h1>
+    <div class="collection">
+      <div class="product product1">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">Scores of people: what is a graphic score?</a>
+          </p>
+        </div>
+        <div class="product__price">
+          <p>Before explaining what a graphic score is, let's step back a little and talk about musical scores in
+            general.
+        </div>
+      </div>
+
+      <div class="product product2">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">this is 2</a>
+          </p>
+        </div>
+        <div class="product__price">
+          <p>$10.00</p>
+        </div>
+      </div>
+
+      <div class="product product3">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">this is 3</a>
+          </p>
+        </div>
+        <div class="product__price">
+          <p>$10.00</p>
+        </div>
+
+      </div>
+      <div class="product product4">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">this is 4</a>
+          </p>
+        </div>
+        <div class="product__price">
+          <p>$10.00</p>
+        </div>
+
+      </div>
+      <div class="product product5">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">this is 5</a>
+          </p>
+        </div>
+        <div class="product__price">
+          <p>$10.00</p>
+        </div>
+
+      </div>
+      <div class="product product6">
+        <a class="product-image"> <img src="img/walter.png" /></a>
+        <div class="product__name">
+          <p>
+            <a href="#">this is 6</a>
+          </p>
+        </div>
+        <div class="product__price">
+       <p>$10.00</p>
+        </div>
+  </section>
+
+  <script>
+    function onWalterHover() {
+      const elWalter = document.querySelector('.walter-modal')
+      elWalter.classList.add('modal-show')
+    }
+
+    function onWalterOut() {
+      const elWalter = document.querySelector('.walter-modal')
+      elWalter.classList.remove('modal-show')
+    }
+  </script>
+
+</body>
+
+</html>

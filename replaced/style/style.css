@@ -1,0 +1,80 @@
+@font-face {
+  font-family: ArbelG-Regular;
+  src: url(../font/ArbelG-Regular.otf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ArbelG-Regular;
+  width: 100%;
+}
+
+/* Remove scrollbar space */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: ArbelG-Regular;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-bottom: 10px;
+  color: hsl(0, 0%, 100%);
+}
+
+.nav-link:hover {
+  color: hsl(0, 0%, 100%);
+  /* text-decoration: underline; */
+  border-bottom: 2px solid;
+
+}
+
+.active-link {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid;
+
+  cursor: default;
+}
+
+nav {
+  position: sticky;
+  font-size: 20px;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav h1 {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}

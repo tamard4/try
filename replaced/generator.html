@@ -1,0 +1,102 @@
+ls
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Replaced</title>
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/generator.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/xzm7rss.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xzm7rss.css">
+  <script src="../../libraries/p5.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/xzm7rss.css">
+  
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="libraries/p5.gui.js"></script>
+  <script src="libraries/quicksettings.js"></script>
+
+  <link rel="shortcut icon" type="image/jpg" href="favicon.jpg" />
+
+</head>
+
+
+<body onload="init()">
+
+  <div class="screen-modal">
+    <div class="modal">
+      <button class="modal-close-btn" onclick="toggleModal()">X</button>
+      <h2>Pick a different song!</h2>
+      <div class="modal-songs">
+        <button class="change-song" onclick="changeSong(1)">Jazzy</button>
+        <button class="change-song" onclick="changeSong(2)">Load</button>
+        <button class="change-song" onclick="changeSong(3)">Mood</button>
+      </div>
+    </div>
+
+  </div>
+  <nav>
+    <h1>Replaced?</h1>
+
+    <ul class="navigation">
+      <li><a href="index.html" class="nav-link ">home</a></li>
+      <li><a href="generator.html" class="nav-link active-link">generator</a></li>
+      <li><a href="about.html" class="nav-link">about</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero" id="home">
+    <div class="welcome-replaced">
+      <h2 class="bio-title">Welcome to {being} replaced.</h2>
+      <p class="bio-text">
+        Meet our generator. This generator is based on an algorithm that can produce a graphic score based on the music
+        it listens to.
+        If you would like to see and try, please click 'Begin'.
+      </p>
+
+      <!-- <input type="file" onchange="loadAudio(event)" accept=".mp3,audio/*"> -->
+
+      <button class="begin-btn" onclick="onBegin()">Begin</button>
+
+      <!-- <button class="pick-btn" onclick="onPick()">Pick your own</button> -->
+
+
+    </div>
+  </section>
+
+  <!-- <section class="file-uploader" id="home">
+    <div class="welcome-replaced">
+      <p>
+        choose your file and then click upload
+      </p>
+      <input type="file" name="uploadfile" id="img" style="display:none;" />
+      <label for="img" accept=".mp3,audio" class="custom-file-input"></label>
+      <button class="upload-btn" onclick="onBegin()">upload</button>
+    </div>
+  </section> -->
+
+  <script>
+    function onPick() {
+      let elmnt = document.getElementById('begin-btn');
+      elmnt.scrollIntoView();
+    }
+  </script>
+
+
+
+
+  <!-- <script src="start.js"></script> -->
+
+  <script src="sketch.js"></script>
+
+
+</body>
+
+</html>
